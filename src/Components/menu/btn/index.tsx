@@ -5,20 +5,23 @@ const WEEKDAYS = ["S", "T", "Q", "Q", "S"];
 
 export default function Button() {
 	const [active, setActive] = useState(false);
+
 	let handleClick = () => {
-		!active ? setActive(active) : setActive(false);
+		!active ? setActive(true) : setActive(false);
 	};
 
 	let Day = Object.values(WEEKDAYS).map((value, index) => {
 		return (
-			<div className={!active ? styles.btnWrap : styles.btnActive} key={index}>
+			<div className={styles.btnWrap} key={index}>
 				<button
 					type="button"
-					className={styles.btn}
-					onClick={() => handleClick}>
+					className={!active ? styles.btnInactive : styles.btnActive}
+					onClick={() => handleClick()}>
 					{value}
 				</button>
-				<span>{!active ? "?" : "v"}</span>
+				<span className={!active ? styles.inactive : styles.active}>
+					{!active ? "?" : "v"}
+				</span>
 			</div>
 		);
 	});
