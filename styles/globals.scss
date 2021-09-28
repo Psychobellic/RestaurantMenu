@@ -22,7 +22,28 @@
   src: url(fonts/lato-hairline-2.ttf);
 }
 
-
+@media (min-width: 320px) {
+  main{
+    font-size: 50% !important;
+    
+    .banner{
+      padding-top: 12.5rem;
+      padding-bottom: 34rem !important;
+    }
+  }
+}
+@media (max-width: 710px) {
+  main{
+    font-size: 75% !important;
+    
+    .banner{
+      padding: 0;
+      margin-bottom: -24rem !important;
+      margin-top: -4rem;
+      min-height: 20vh !important;
+    }
+  }
+}
 
 html,
 body {
@@ -30,29 +51,42 @@ body {
   margin: 0;
   font-family: var(--font1);
   background: var(--white);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 
   main{
-    overflow-y: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     a {
       color: inherit;
       text-decoration: none;
     }    
 
     .logoSVG{
-      width: 100%;
+      min-width: 100vw;
       height: 5rem;
-      transform: translateY(-50%) scale(1.2);
       z-index: 2;
       padding: 2rem;
+      margin-bottom: -2rem !important;
       background: #fff;
     }
 
     .banner{
-      width: 105%;
+      min-width: 100vw;
+      background-image: url(../src/svg/banner.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: auto;
+      min-height: 5rem;
       z-index: 1;
-      transform: translateY(-30%);
-      margin: 2rem;
-      height: 70%;
+      position: relative;
+      transform: translateY(-17.5%) scaleX(1.6);
+      margin-bottom: -30rem;
     }
   }
 }

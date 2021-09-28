@@ -1,10 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import styles from "../styles/Home.module.scss";
-
 import Logo from "../src/Components/logo";
-import Banner from "../src/Components/banner";
 import Menu from "../src/Components/menu";
 
 const Home: NextPage = () => {
@@ -18,9 +15,9 @@ const Home: NextPage = () => {
 				/>
 				<link rel="icon" href="/logo.jpg" />
 			</Head>
-			<main className={styles.main}>
+			<main>
 				<Logo />
-				<Banner />
+				<div className="banner" />
 				<Menu />
 			</main>
 		</>
