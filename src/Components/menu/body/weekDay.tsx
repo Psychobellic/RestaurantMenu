@@ -1,5 +1,5 @@
 import Calendar from "../../../svg/calendar";
-import Button from "../btn/index";
+import { Button } from "../btn/index";
 
 import styles from "./styles.module.scss";
 
