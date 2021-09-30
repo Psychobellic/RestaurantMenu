@@ -7,22 +7,27 @@ const WEEKDAYS = ["S", "T", "Q", "Q", "S"];
 
 export const Button = () => {
 	let [active, setActive] = useState(false);
-	let [selectedIndex, setSelectedIndex] = useState(0);
+	let [selectedIndex, setSelectedIndex] = useState(-1);
 
 	useEffect(() => {
 		setActive(active);
+		console.log(active);
 	}, [active, selectedIndex]);
 
 	let Day = Object.values(WEEKDAYS).map((value, index) => {
 		let handleClick = () => {
 			setSelectedIndex(index);
-			!active && selectedIndex === index ? setActive(true) : setActive(false);
+			if (!active && selectedIndex === index) {
+				setActive(false);
+			} else {
+				setActive(true);
+			}
 		};
 
 		if (active && selectedIndex === index) {
 			return (
-				<ul>
-					<li className={styles.btnWrap} key={index + value}>
+				<ul key={index + value}>
+					<li className={styles.btnWrap}>
 						<button
 							key={index + value}
 							type="button"
@@ -43,7 +48,7 @@ export const Button = () => {
 			);
 		} else {
 			return (
-				<ul>
+				<ul key={index + value}>
 					<li className={styles.btnWrap} key={index}>
 						<button
 							type="button"
