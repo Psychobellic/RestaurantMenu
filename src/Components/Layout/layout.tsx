@@ -5,7 +5,7 @@ import Logo from "../logo";
 import { Button } from "../button/index";
 import Calendar from "../../svg/calendar";
 
-export default function Layout(children: React.FC) {
+export default function Layout({ children }: any) {
 	return (
 		<>
 			<Head>
@@ -18,7 +18,12 @@ export default function Layout(children: React.FC) {
 			</Head>
 			<main className={styles.main}>
 				<Logo />
-				<div className={styles.banner} />
+				<div className={styles.banner}>
+					<p className={styles.bannerText}>
+						O QUE SERÁ <br /> QUE TEM <br />
+						HOJE?
+					</p>
+				</div>
 				<div className={styles.weekdaysWrap}>
 					<div className={styles.weekDay}>
 						<Calendar />

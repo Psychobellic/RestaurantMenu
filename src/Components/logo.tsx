@@ -1,3 +1,5 @@
+import styles from "../styles/layout.module.scss";
+
 export default function Logo() {
 	return (
 		<svg
@@ -5,7 +7,7 @@ export default function Logo() {
 			width="181.26"
 			height="76.816"
 			viewBox="0 0 181.26 76.816"
-			className="logoSVG">
+			className={styles.logoSVG}>
 			<g id="Grupo_13" data-name="Grupo 13" transform="translate(-279 -11.277)">
 				<g id="Grupo_8" data-name="Grupo 8" transform="translate(279 20.698)">
 					<path

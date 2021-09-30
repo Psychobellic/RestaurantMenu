@@ -1,3 +1,5 @@
+import styles from "../src/styles/layout.module.scss";
+
 import { useRouter } from "next/router";
 
 export default function Slug() {

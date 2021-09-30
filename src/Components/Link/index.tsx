@@ -1,3 +1,5 @@
+import styles from "../../styles/layout.module.scss";
+
 import React from "react";
 import NextLink from "next/link";
 

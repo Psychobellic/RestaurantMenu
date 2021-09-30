@@ -30,22 +30,24 @@ export const Button: React.FC = () => {
 			return (
 				<ul key={index + value}>
 					<li className={styles.btnWrap}>
-						<Link
-							href={stringIndex}
-							as={stringIndex}
-							onClick={handleClick}
-							passHref={true}
-							className={styles.btnActive}>
-							{value}
-						</Link>
-						<span className={styles.active}>
-							<Image
-								src="/checkmark-png-25954.png"
-								width={32}
-								height={32}
-								alt="checkmark"
-							/>
-						</span>
+						<a>
+							<Link
+								href={stringIndex}
+								as={stringIndex}
+								onClick={handleClick}
+								passHref={true}
+								className={styles.btnActive}>
+								{value}
+							</Link>
+							<span className={styles.active}>
+								<Image
+									src="/checkmark-png-25954.png"
+									width={32}
+									height={32}
+									alt="checkmark"
+								/>
+							</span>
+						</a>
 					</li>
 				</ul>
 			);

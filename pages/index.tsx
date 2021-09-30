@@ -1,7 +1,7 @@
+import styles from "../src/styles/layout.module.scss";
+
 import Calendar from "../src/svg/calendar";
 import { Button } from "../src/Components/button";
-
-import styles from "../src/styles/layout.module.scss";
 
 export default function Menu() {
 	return (
