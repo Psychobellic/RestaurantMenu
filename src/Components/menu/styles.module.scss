@@ -1,3 +1,21 @@
 .weekdays{
+  z-index: 3;
+}
+.weekdaysWrap{
+  display: flex;
+  flex-direction: column;
   z-index: 2;
+  
+  .weekDay{
+    display: flex;
+    color: var(--greenLight);
+    background: var(--white);
+    z-index: 3;
+    width: 100vw;
+    padding-top: 1rem;
+    justify-content: center;
+    h1{
+      margin: 1.5rem;
+    }
+  }
 }

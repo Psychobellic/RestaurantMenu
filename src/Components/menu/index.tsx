@@ -1,15 +1,18 @@
-import WeekDay from "./body/weekDay";
-import MenuSelection from "./body/menuSelection";
-import Suggestion from "./body/suggestion";
+import Calendar from "../../svg/calendar";
+import { Button } from "./btn/index";
 
 import styles from "./styles.module.scss";
 
-export default function Menu() {
+export default function weekDay() {
 	return (
-		<div className={styles.weekdays}>
-			<WeekDay />
-			<MenuSelection />
-			<Suggestion />
+		<div className={styles.weekdaysWrap}>
+			<div className={styles.weekDay}>
+				<Calendar />
+				<h1>CARDÁPIO DA SEMANA</h1>
+			</div>
+			<div>
+				<Button />
+			</div>
 		</div>
 	);
 }

@@ -80,13 +80,11 @@ body {
       background-image: url(/banner.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center center;
-      height: auto;
-      min-height: 5rem;
-      z-index: 1;
+      background-position: center center;   
+      z-index: 0;
       position: relative;
       transform: translateY(-17.5%) scaleX(1.6);
-      margin-bottom: -30rem;
+      margin-bottom: -27.5rem;
     }
   }
 }

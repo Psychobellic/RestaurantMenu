@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
@@ -17,7 +18,7 @@ export const Button = () => {
 	let Day = Object.values(WEEKDAYS).map((value, index) => {
 		let handleClick = () => {
 			setSelectedIndex(index);
-			if (!active && selectedIndex === index) {
+			if (active && selectedIndex === index) {
 				setActive(false);
 			} else {
 				setActive(true);
@@ -29,7 +30,6 @@ export const Button = () => {
 				<ul key={index + value}>
 					<li className={styles.btnWrap}>
 						<button
-							key={index + value}
 							type="button"
 							className={styles.btnActive}
 							onClick={handleClick}>
@@ -38,8 +38,8 @@ export const Button = () => {
 						<span className={styles.active}>
 							<Image
 								src="/checkmark-png-25954.png"
-								width={64}
-								height={64}
+								width={32}
+								height={32}
 								alt="checkmark"
 							/>
 						</span>

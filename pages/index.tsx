@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 
 import Logo from "../src/Components/logo";
 import Menu from "../src/Components/menu";
