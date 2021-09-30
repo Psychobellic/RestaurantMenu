@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "../../Link";
+import Link from "../Link";
 
-import styles from "./styles.module.scss";
+import styles from "../../styles/layout.module.scss";
 
 const WEEKDAYS = ["S", "T", "Q", "Q", "S"];
 

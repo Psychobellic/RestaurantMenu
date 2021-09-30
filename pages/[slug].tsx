@@ -1,3 +1,8 @@
+import { useRouter } from "next/router";
+
 export default function Slug() {
-	return <h1>Hola</h1>;
+	const router = useRouter();
+	const { slug } = router.query;
+
+	return <h1>{slug}</h1>;
 }

@@ -1,27 +1,18 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import Calendar from "../src/svg/calendar";
+import { Button } from "../src/Components/button";
 
-import Logo from "../src/Components/logo";
-import Menu from "../src/Components/menu";
+import styles from "../src/styles/layout.module.scss";
 
-const Home: NextPage = () => {
+export default function Menu() {
 	return (
-		<>
-			<Head>
-				<title>Prato do Dia</title>
-				<meta
-					name="description"
-					content="Created by Matheus Schiffer as a test case for Jumpi"
-				/>
-				<link rel="icon" href="/logo.jpg" />
-			</Head>
-			<main>
-				<Logo />
-				<div className="banner" />
-				<Menu />
-			</main>
-		</>
+		<div className={styles.weekdaysWrap}>
+			<div className={styles.weekDay}>
+				<Calendar />
+				<h1>CARDÁPIO DA SEMANA</h1>
+			</div>
+			<div>
+				<Button />
+			</div>
+		</div>
 	);
-};
-
-export default Home;
+}

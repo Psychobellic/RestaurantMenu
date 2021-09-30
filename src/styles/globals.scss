@@ -65,26 +65,5 @@ body {
       color: inherit;
       text-decoration: none;
     }    
-
-    .logoSVG{
-      min-width: 100vw;
-      height: 5rem;
-      z-index: 2;
-      padding: 2rem;
-      margin-bottom: -2rem !important;
-      background: #fff;
-    }
-
-    .banner{
-      min-width: 100vw;
-      background-image: url(/banner.jpg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;   
-      z-index: 0;
-      position: relative;
-      transform: translateY(-17.5%) scaleX(1.6);
-      margin-bottom: -27.5rem;
-    }
   }
 }
