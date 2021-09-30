@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 import styles from "./styles.module.scss";
 
@@ -12,7 +12,6 @@ export const Button = () => {
 
 	useEffect(() => {
 		setActive(active);
-		console.log(active);
 	}, [active, selectedIndex]);
 
 	let Day = Object.values(WEEKDAYS).map((value, index) => {
@@ -30,6 +29,7 @@ export const Button = () => {
 				<ul key={index + value}>
 					<li className={styles.btnWrap}>
 						<button
+							data-input={index}
 							type="button"
 							className={styles.btnActive}
 							onClick={handleClick}>
