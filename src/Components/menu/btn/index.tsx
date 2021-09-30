@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import Link from "../../Link";
 
 import styles from "./styles.module.scss";
 
 const WEEKDAYS = ["S", "T", "Q", "Q", "S"];
 
-export const Button = () => {
+export const Button: React.FC = () => {
 	let [active, setActive] = useState(false);
 	let [selectedIndex, setSelectedIndex] = useState(-1);
 
@@ -17,6 +17,7 @@ export const Button = () => {
 	let Day = Object.values(WEEKDAYS).map((value, index) => {
 		let handleClick = () => {
 			setSelectedIndex(index);
+
 			if (active && selectedIndex === index) {
 				setActive(false);
 			} else {
@@ -24,17 +25,19 @@ export const Button = () => {
 			}
 		};
 
-		if (active && selectedIndex === index) {
+		if (active === true && selectedIndex === index) {
+			let stringIndex = index.toString();
 			return (
 				<ul key={index + value}>
 					<li className={styles.btnWrap}>
-						<button
-							data-input={index}
-							type="button"
-							className={styles.btnActive}
-							onClick={handleClick}>
+						<Link
+							href={stringIndex}
+							as={stringIndex}
+							onClick={handleClick}
+							passHref={true}
+							className={styles.btnActive}>
 							{value}
-						</button>
+						</Link>
 						<span className={styles.active}>
 							<Image
 								src="/checkmark-png-25954.png"
@@ -47,15 +50,16 @@ export const Button = () => {
 				</ul>
 			);
 		} else {
+			let stringIndex = index.toString();
 			return (
 				<ul key={index + value}>
-					<li className={styles.btnWrap} key={index}>
-						<button
-							type="button"
-							className={styles.btnInactive}
-							onClick={handleClick}>
+					<li className={styles.btnWrap} key={index} onClick={handleClick}>
+						<Link
+							href={stringIndex}
+							as={stringIndex}
+							className={styles.btnInactive}>
 							{value}
-						</button>
+						</Link>
 						<span className={styles.inactive}>{"?"}</span>
 					</li>
 				</ul>
