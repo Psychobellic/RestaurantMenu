@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./styles.module.scss";
 
 export default function Suggestion() {
@@ -33,6 +34,12 @@ export default function Suggestion() {
 							<a type="submit" className={styles.submit}>
 								Finalizar cardápio da semana
 							</a>
+							<Image
+								src="/whiteCheckmark-png-25954.png"
+								width={16}
+								height={16}
+								alt="checkmark"
+							/>
 						</li>
 					</li>
 				</ul>
