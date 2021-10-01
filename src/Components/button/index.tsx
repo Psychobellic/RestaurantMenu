@@ -28,43 +28,44 @@ export const Button: React.FC = () => {
 		if (active === true && selectedIndex === index) {
 			let stringIndex = index.toString();
 			return (
-				<ul key={index + value}>
-					<li className={styles.btnWrap}>
-						<a>
-							<Link
-								href={stringIndex}
-								as={stringIndex}
-								onClick={handleClick}
-								passHref={true}
-								className={styles.btnActive}>
-								{value}
-							</Link>
-							<span className={styles.active}>
-								<Image
-									src="/checkmark-png-25954.png"
-									width={32}
-									height={32}
-									alt="checkmark"
-								/>
-							</span>
-						</a>
-					</li>
-				</ul>
+				<li className={styles.btnWrap} key={index + value}>
+					<Link
+						href={"/" + stringIndex}
+						as={stringIndex}
+						onClick={handleClick}
+						passHref={true}
+						className={styles.btnActive}>
+						{value}
+					</Link>
+					<Link href={stringIndex} as={stringIndex}>
+						<span className={styles.active}>
+							<Image
+								src="/checkmark-png-25954.png"
+								width={32}
+								height={32}
+								alt="checkmark"
+							/>
+						</span>
+					</Link>
+				</li>
 			);
 		} else {
 			let stringIndex = index.toString();
 			return (
-				<ul key={index + value}>
-					<li className={styles.btnWrap} key={index} onClick={handleClick}>
-						<Link
-							href={stringIndex}
-							as={stringIndex}
-							className={styles.btnInactive}>
-							{value}
-						</Link>
+				<li
+					key={index + value}
+					className={styles.btnWrap}
+					onClick={handleClick}>
+					<Link
+						href={stringIndex}
+						as={stringIndex}
+						className={styles.btnInactive}>
+						{value}
+					</Link>
+					<Link href={stringIndex} as={stringIndex}>
 						<span className={styles.inactive}>{"?"}</span>
-					</li>
-				</ul>
+					</Link>
+				</li>
 			);
 		}
 	});

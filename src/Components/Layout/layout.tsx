@@ -30,7 +30,9 @@ export default function Layout({ children }: any) {
 						<h1>CARDÁPIO DA SEMANA</h1>
 					</div>
 					<div>
-						<Button />
+						<ul>
+							<Button />
+						</ul>
 					</div>
 				</div>
 				{children}

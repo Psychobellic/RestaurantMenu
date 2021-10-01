@@ -1,4 +1,4 @@
-import styles from "../../styles/layout.module.scss";
+import "../../styles/layout.module.scss";
 
 import React from "react";
 import NextLink from "next/link";
@@ -9,9 +9,9 @@ export default function Link({ ...props }) {
 			href={{ pathname: props.href, query: props.index }}
 			as={props.as}
 			passHref>
-			<a className={props.className} onClick={props.handleClick}>
+			<div className={props.className} onClick={props.handleClick}>
 				{props.children}
-			</a>
+			</div>
 		</NextLink>
 	);
 }

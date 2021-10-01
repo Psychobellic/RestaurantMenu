@@ -1,10 +1,11 @@
-import styles from "../src/styles/layout.module.scss";
-
 import { useRouter } from "next/router";
 
 export default function Slug() {
 	const router = useRouter();
 	const { slug } = router.query;
+	const text = { slug };
 
-	return <h1>{slug}</h1>;
+	if (process.browser) {
+		return <h1>{text.slug}</h1>;
+	} else return null;
 }

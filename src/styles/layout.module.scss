@@ -47,14 +47,16 @@
   background: var(--white);
   padding-bottom: 3rem;
   
-  
   .btnWrap{
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    margin: 1rem;
   }
 
   .btnActive{
+    display: flex;
+    flex-direction: column;
+    background: var(--greenLight);
     justify-content: center;
     align-items: center;
     height: 3rem;
@@ -64,12 +66,7 @@
     color: var(--white);
     font-size: 1rem;
     font: var(--font1);
-    margin: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    background: var(--greenLight);
+  
   }
   .btnActive:hover{
     cursor: pointer;
@@ -85,9 +82,7 @@
     color: var(--white);
     font-size: 1rem;
     font: var(--font1);
-    margin: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  
     display: flex;
     flex-direction: column;
     background: var(--orange);
@@ -123,6 +118,7 @@
     width: 100vw;
     padding-top: 1rem;
     justify-content: center;
+    padding: 4rem;
     h1{
       margin: 1.5rem;
     }
