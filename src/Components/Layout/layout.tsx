@@ -4,6 +4,7 @@ import styles from "../../styles/layout.module.scss";
 import Logo from "../logo";
 import { Button } from "../button/index";
 import Calendar from "../../svg/calendar";
+import Suggestion from "../suggestions";
 
 export default function Layout({ children }: any) {
 	return (
@@ -36,6 +37,7 @@ export default function Layout({ children }: any) {
 					</div>
 				</div>
 				{children}
+				<Suggestion />
 			</main>
 		</>
 	);

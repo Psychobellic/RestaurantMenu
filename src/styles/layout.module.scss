@@ -6,6 +6,7 @@
     padding: 2rem;
     margin-bottom: -2rem !important;
     background: var(--white);
+    border-bottom: var(--greenLight) 4px solid;
   }
 
 .banner{
@@ -20,10 +21,11 @@
   background-position: center center;   
   z-index: 0;
   position: relative;
-  transform: translateY(27.5%);
-  margin-top: -6%;
+  transform: translateY(5%);
+  margin-bottom: -8%;
   background-color: var(--black);
   opacity: 0.9;
+
   .bannerText{
     font-family: var(--font2);
     color: var(--white);
@@ -111,7 +113,6 @@
   z-index: 2;
   
   .weekDay{
-    display: flex;
     color: var(--greenLight);
     background: var(--white);
     z-index: 3;

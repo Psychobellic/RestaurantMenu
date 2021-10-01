@@ -64,6 +64,15 @@ body {
     a {
       color: inherit;
       text-decoration: none;
-    }    
+    } 
+    
+    .arrow-down{
+      transform: translateY(250%);
+      text-align: right;
+    }
+    .arrow-forward{
+      transform: rotate(-90deg) translateX(-125%);
+      text-align: right;
+    }
   }
 }
