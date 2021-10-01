@@ -1,4 +1,5 @@
 import styles from "../src/styles/slug.module.scss";
+import Link from "../src/Components/Link";
 import { useRouter } from "next/router";
 import { ArrowForward, ArrowDown } from "../src/svg/arrow";
 
@@ -10,10 +11,10 @@ export const Slug = () => {
 		return (
 			<>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/0"} className={styles.dayTitle}>
 						<h1>SEGUNDA 01/01</h1>
 						<ArrowDown />
-					</span>
+					</Link>
 					<span className={styles.dayContent}>
 						<strong>Guarnição:</strong> arroz, feijão, abobrinha, alface, rúcula
 						<br />
@@ -26,28 +27,28 @@ export const Slug = () => {
 					<span> Opções vem aqui.. Placeholder </span>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/1"} className={styles.dayTitle}>
 						<h1>TERÇA 02/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/2"} className={styles.dayTitle}>
 						<h1>QUARTA 03/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/3"} className={styles.dayTitle}>
 						<h1>QUINTA 04/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/4"} className={styles.dayTitle}>
 						<h1>SEXTA 06/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 			</>
 		);
@@ -55,16 +56,16 @@ export const Slug = () => {
 		return (
 			<>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/0"} className={styles.dayTitle}>
 						<h1>SEGUNDA 01/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/1"} className={styles.dayTitle}>
 						<h1>TERÇA 02/01</h1>
 						<ArrowDown />
-					</span>
+					</Link>
 					<span className={styles.dayContent}>
 						<strong>Guarnição:</strong> arroz, feijão, abobrinha, alface, rúcula
 						<br />
@@ -77,22 +78,22 @@ export const Slug = () => {
 					<span> Opções vem aqui.. Placeholder </span>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/2"} className={styles.dayTitle}>
 						<h1>QUARTA 03/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/3"} className={styles.dayTitle}>
 						<h1>QUINTA 04/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/4"} className={styles.dayTitle}>
 						<h1>SEXTA 06/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 			</>
 		);
@@ -100,22 +101,22 @@ export const Slug = () => {
 		return (
 			<>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/0"} className={styles.dayTitle}>
 						<h1>SEGUNDA 01/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/1"} className={styles.dayTitle}>
 						<h1>TERÇA 02/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/2"} className={styles.dayTitle}>
 						<h1>QUARTA 03/01</h1>
 						<ArrowDown />
-					</span>
+					</Link>
 					<span className={styles.dayContent}>
 						<strong>Guarnição:</strong> arroz, feijão, abobrinha, alface, rúcula
 						<br />
@@ -128,16 +129,16 @@ export const Slug = () => {
 					<span> Opções vem aqui.. Placeholder </span>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/3"} className={styles.dayTitle}>
 						<h1>QUINTA 04/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/4"} className={styles.dayTitle}>
 						<h1>SEXTA 06/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 			</>
 		);
@@ -145,28 +146,28 @@ export const Slug = () => {
 		return (
 			<>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/0"} className={styles.dayTitle}>
 						<h1>SEGUNDA 01/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/1"} className={styles.dayTitle}>
 						<h1>TERÇA 02/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/2"} className={styles.dayTitle}>
 						<h1>QUARTA 03/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/3"} className={styles.dayTitle}>
 						<h1>QUINTA 04/01</h1>
 						<ArrowDown />
-					</span>
+					</Link>
 					<span className={styles.dayContent}>
 						<strong>Guarnição:</strong> arroz, feijão, abobrinha, alface, rúcula
 						<br />
@@ -179,10 +180,10 @@ export const Slug = () => {
 					<span> Opções vem aqui.. Placeholder </span>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/4"} className={styles.dayTitle}>
 						<h1>SEXTA 06/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 			</>
 		);
@@ -190,34 +191,34 @@ export const Slug = () => {
 		return (
 			<>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/0"} className={styles.dayTitle}>
 						<h1>SEGUNDA 01/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/1"} className={styles.dayTitle}>
 						<h1>TERÇA 02/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/2"} className={styles.dayTitle}>
 						<h1>QUARTA 03/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/3"} className={styles.dayTitle}>
 						<h1>QUINTA 04/01</h1>
 						<ArrowForward />
-					</span>
+					</Link>
 				</div>
 				<div className={styles.day}>
-					<span className={styles.dayTitle}>
+					<Link href={"/4"} className={styles.dayTitle}>
 						<h1>SEXTA 06/01</h1>
 						<ArrowDown />
-					</span>
+					</Link>
 					<span className={styles.dayContent}>
 						<strong>Guarnição:</strong> arroz, feijão, abobrinha, alface, rúcula
 						<br />

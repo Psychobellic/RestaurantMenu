@@ -15,11 +15,10 @@ export default function Suggestion() {
 				autoComplete="off"
 				onSubmit={(e) => {
 					handleSubmit(e);
-				}}
-				className={styles.box}>
+				}}>
 				<ul className={styles.suggestionForm}>
 					<li className={styles.formSuggestion}>
-						<label htmlFor="suggestion">Message:</label>
+						<label htmlFor="suggestion" />
 						<input
 							autoComplete="off"
 							type="text"
@@ -27,12 +26,13 @@ export default function Suggestion() {
 							className={styles.inputField}
 							id={styles.content}
 							required
+							placeholder="...Digite Aqui"
 						/>
 						<li className={styles.formSubmit}>
 							<label htmlFor="submit" />
-							<button type="submit" name="submit" className={styles.submit}>
-								Submit
-							</button>
+							<a type="submit" className={styles.submit}>
+								Finalizar cardápio da semana
+							</a>
 						</li>
 					</li>
 				</ul>
