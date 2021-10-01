@@ -1,6 +1,9 @@
 import styles from "../src/styles/slug.module.scss";
+
 import Link from "../src/Components/Link";
 import { useRouter } from "next/router";
+
+import Card from "../src/Components/Card";
 import { ArrowForward, ArrowDown } from "../src/svg/arrow";
 
 export const Slug = () => {
@@ -24,7 +27,11 @@ export const Slug = () => {
 						Para <strong>acompanhamento</strong> selecione <strong>uma</strong>
 						das opções abaixo:
 					</span>
-					<span> Opções vem aqui.. Placeholder </span>
+					<div className={styles.cardContainer}>
+						<Card option="OPÇÃO 1" content="- Bisteca de Porco" />
+						<Card option="OPÇÃO 2" content="- Omelete" />
+						<Card option="OPÇÃO 3" content="- Filé de Frango" />
+					</div>
 				</div>
 				<div className={styles.day}>
 					<Link href={"/1"} className={styles.dayTitle}>
@@ -75,7 +82,11 @@ export const Slug = () => {
 						Para <strong>acompanhamento</strong> selecione <strong>uma</strong>
 						das opções abaixo:
 					</span>
-					<span> Opções vem aqui.. Placeholder </span>
+					<div className={styles.cardContainer}>
+						<Card option="OPÇÃO 1" content="- Bisteca de Porco" />
+						<Card option="OPÇÃO 2" content="- Omelete" />
+						<Card option="OPÇÃO 3" content="- Filé de Frango" />
+					</div>
 				</div>
 				<div className={styles.day}>
 					<Link href={"/2"} className={styles.dayTitle}>
@@ -126,7 +137,11 @@ export const Slug = () => {
 						Para <strong>acompanhamento</strong> selecione <strong>uma</strong>
 						das opções abaixo:
 					</span>
-					<span> Opções vem aqui.. Placeholder </span>
+					<div className={styles.cardContainer}>
+						<Card option="OPÇÃO 1" content="- Bisteca de Porco" />
+						<Card option="OPÇÃO 2" content="- Omelete" />
+						<Card option="OPÇÃO 3" content="- Filé de Frango" />
+					</div>
 				</div>
 				<div className={styles.day}>
 					<Link href={"/3"} className={styles.dayTitle}>
@@ -177,7 +192,11 @@ export const Slug = () => {
 						Para <strong>acompanhamento</strong> selecione <strong>uma</strong>
 						das opções abaixo:
 					</span>
-					<span> Opções vem aqui.. Placeholder </span>
+					<div className={styles.cardContainer}>
+						<Card option="OPÇÃO 1" content="- Bisteca de Porco" />
+						<Card option="OPÇÃO 2" content="- Omelete" />
+						<Card option="OPÇÃO 3" content="- Filé de Frango" />
+					</div>
 				</div>
 				<div className={styles.day}>
 					<Link href={"/4"} className={styles.dayTitle}>
@@ -228,7 +247,11 @@ export const Slug = () => {
 						Para <strong>acompanhamento</strong> selecione <strong>uma</strong>
 						das opções abaixo:
 					</span>
-					<span> Opções vem aqui.. Placeholder </span>
+					<div className={styles.cardContainer}>
+						<Card option="OPÇÃO 1" content="- Bisteca de Porco" />
+						<Card option="OPÇÃO 2" content="- Omelete" />
+						<Card option="OPÇÃO 3" content="- Filé de Frango" />
+					</div>
 				</div>
 			</>
 		);

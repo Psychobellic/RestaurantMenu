@@ -12,9 +12,9 @@
   padding-top: 1rem;
   margin-left: -45vw;
   font-size: 1rem;
-
   :hover{
     cursor: pointer;
+
   }
   .dayTitle{
     display: flex;
@@ -38,5 +38,10 @@
     strong{
     font-weight: 600;
     }
+  }
+  .cardContainer{
+    display: flex;
+    flex-direction: row;
+    width: 70rem;
   }
 }
