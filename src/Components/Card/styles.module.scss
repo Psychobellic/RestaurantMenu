@@ -11,14 +11,27 @@
     background-color: var(--greenLight);
     color: var(--white);
     font-size: 1rem;
-    line-height:2rem;
+    line-height:1.75rem;
     margin-top: -0.1rem;
   }
   .content{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 1rem;
     font-family: var(--font2);
     background-color: var(--white);
     color: var(--grayDark);
+  }
+  .selected{
+    text-align: center;
+    margin-left: 80%;
+    background-color: var(--greenLight);
+    width: 2rem;
+    height: 2rem;
+    border-radius:1rem;
+    :first-child{
+      
+      transform:  translateY(50%);
+    }
   }
 }

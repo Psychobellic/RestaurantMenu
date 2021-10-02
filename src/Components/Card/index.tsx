@@ -23,12 +23,13 @@ export default function Card({ option, content }: any) {
 			<h1 className={styles.option}>{option}</h1>
 			<span className={styles.content}>{content}</span>
 			{isActive ? (
-				<div>
+				<div className={styles.selected}>
 					<Image
 						alt="whiteCheckmark"
 						src="/whiteCheckmark-png-25954.png"
 						width="16"
-						height="16"></Image>
+						height="16"
+					/>
 				</div>
 			) : null}
 		</div>
