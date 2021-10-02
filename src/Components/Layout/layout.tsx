@@ -32,7 +32,7 @@ export default function Layout({ children }: any) {
 					</div>
 					<div>
 						<ul>
-							<Button />
+							<Button active />
 						</ul>
 					</div>
 				</div>

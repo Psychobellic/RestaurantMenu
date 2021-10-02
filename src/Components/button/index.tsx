@@ -1,32 +1,38 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+
 import Link from "../Link";
 
 import styles from "../../styles/layout.module.scss";
 
 const WEEKDAYS = ["S", "T", "Q", "Q", "S"];
 
-export const Button: React.FC = () => {
+export function Button(props: any) {
 	let [active, setActive] = useState(false);
 	let [selectedIndex, setSelectedIndex] = useState(-1);
 
 	useEffect(() => {
-		setActive(active);
-	}, [active, selectedIndex]);
+		if (active) setActive(false);
+		else {
+			setActive(true);
+		}
+	}, [selectedIndex]);
 
 	let Day = Object.values(WEEKDAYS).map((value, index) => {
 		let handleClick = () => {
+			setActive(false);
 			setSelectedIndex(index);
 
-			if (active && selectedIndex === index) {
-				setActive(false);
-			} else {
+			if (!active && selectedIndex == index) {
 				setActive(true);
+			} else if (active) {
+				setActive(false);
 			}
 		};
 
-		if (active === true && selectedIndex === index) {
+		if (active && selectedIndex === index) {
 			let stringIndex = index.toString();
+
 			return (
 				<li className={styles.btnWrap} key={index + value}>
 					<Link
@@ -71,4 +77,4 @@ export const Button: React.FC = () => {
 	});
 
 	return <div className={styles.button}>{Day}</div>;
-};
+}
