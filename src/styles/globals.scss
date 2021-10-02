@@ -22,10 +22,9 @@
   src: url(fonts/lato-hairline-2.ttf);
 }
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 480px){
   main{
     font-size: 50% !important;
-    
     .banner{
       padding-top: 12.5rem;
       padding-bottom: 34rem !important;
@@ -34,7 +33,7 @@
 }
 @media (max-width: 710px) {
   main{
-    font-size: 75% !important;
+    font-size: 65% !important;
     
     .banner{
       padding: 0;
