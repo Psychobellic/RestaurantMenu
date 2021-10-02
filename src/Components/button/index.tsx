@@ -12,22 +12,13 @@ export function Button(props: any) {
 	let [selectedIndex, setSelectedIndex] = useState(-1);
 
 	useEffect(() => {
-		if (active) setActive(false);
-		else {
-			setActive(true);
-		}
-	}, [selectedIndex]);
+		setActive(false);
+	}, []);
 
 	let Day = Object.values(WEEKDAYS).map((value, index) => {
 		let handleClick = () => {
-			setActive(false);
 			setSelectedIndex(index);
-
-			if (!active && selectedIndex == index) {
-				setActive(true);
-			} else if (active) {
-				setActive(false);
-			}
+			!active ? setActive(true) : null;
 		};
 
 		if (active && selectedIndex === index) {
@@ -36,7 +27,7 @@ export function Button(props: any) {
 			return (
 				<li className={styles.btnWrap} key={index + value}>
 					<Link
-						href={"/" + stringIndex}
+						href={stringIndex}
 						as={stringIndex}
 						onClick={handleClick}
 						passHref={true}

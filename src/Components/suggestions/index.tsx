@@ -29,7 +29,7 @@ export default function Suggestion() {
 							required
 							placeholder="...Digite Aqui"
 						/>
-						<li className={styles.formSubmit}>
+						<div className={styles.formSubmit}>
 							<label htmlFor="submit" />
 							<a type="submit" className={styles.submit}>
 								Finalizar cardápio da semana
@@ -40,7 +40,7 @@ export default function Suggestion() {
 								height={16}
 								alt="checkmark"
 							/>
-						</li>
+						</div>
 					</li>
 				</ul>
 			</form>
