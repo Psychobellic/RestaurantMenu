@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
+import Modal from "../Modal";
+
 export default function Suggestion() {
+	const [openModal, setOpenModal] = useState(false);
+
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		console.log("sending");
@@ -31,7 +35,11 @@ export default function Suggestion() {
 						/>
 						<div className={styles.formSubmit}>
 							<label htmlFor="submit" />
-							<a className={styles.submit}>
+							<a
+								className={styles.submit}
+								onClick={() => {
+									setOpenModal(true);
+								}}>
 								<h3>Finalizar cardápio da semana</h3>
 							</a>
 							<Image
@@ -44,6 +52,7 @@ export default function Suggestion() {
 					</li>
 				</ul>
 			</form>
+			{openModal && <Modal close={setOpenModal} />}
 		</>
 	);
 }

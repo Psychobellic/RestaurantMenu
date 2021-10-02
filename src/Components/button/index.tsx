@@ -7,7 +7,7 @@ import styles from "../../styles/layout.module.scss";
 
 const WEEKDAYS = ["S", "T", "Q", "Q", "S"];
 
-export function Button(props: any) {
+export function Button(props) {
 	let [active, setActive] = useState(false);
 	let [selectedIndex, setSelectedIndex] = useState(-1);
 

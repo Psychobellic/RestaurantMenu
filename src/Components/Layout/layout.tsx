@@ -6,7 +6,7 @@ import { Button } from "../button/index";
 import Calendar from "../../svg/calendar";
 import Suggestion from "../suggestions";
 
-export default function Layout({ children }: any) {
+export default function Layout({ children }) {
 	return (
 		<>
 			<Head>
