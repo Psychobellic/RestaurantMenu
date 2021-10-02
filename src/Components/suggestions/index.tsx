@@ -31,8 +31,8 @@ export default function Suggestion() {
 						/>
 						<div className={styles.formSubmit}>
 							<label htmlFor="submit" />
-							<a type="submit" className={styles.submit}>
-								Finalizar cardápio da semana
+							<a className={styles.submit}>
+								<h3>Finalizar cardápio da semana</h3>
 							</a>
 							<Image
 								src="/whiteCheckmark-png-25954.png"
