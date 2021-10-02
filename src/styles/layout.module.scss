@@ -136,14 +136,14 @@
     .banner{
       margin-top: -4rem;
       max-height: 10rem;
-      margin-bottom: 2rem;
+     
       .bannerText{
         width: 50%;
         font-size: 3.75rem;
         justify-content: center;
         align-items: center;
         text-align: center;
-        transform: translateY(10%);
+        transform: translateY(0%);
       }
     }
   }
@@ -151,7 +151,7 @@
 
 @media screen and (min-width: 680px) and (max-width: 960px){
 .main{
-  font-size: 1rem !important; 
+  font-size: 0.8rem !important; 
   .logoSVG{
     height: 4rem;
   }
@@ -184,4 +184,23 @@
       }
     }
   }
+  }
+
+  @media (min-width: 1440px){
+    .main{
+      font-size: 1rem !important; 
+
+      .logoSVG{
+        height: 4rem;
+      }
+      .banner{
+        margin-top: -1.5rem;
+        margin-bottom: -3rem;
+        max-height: 10rem;
+        .bannerText{
+          font-size: 4rem;
+          transform: translateY(2.5%);
+        }
+      }
+    }
   }
