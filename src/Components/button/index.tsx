@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Link from "../Link";
 
-import styles from "../../styles/layout.module.scss";
+import styles from "./styles.module.scss";
 
 const WEEKDAYS = ["S", "T", "Q", "Q", "S"];
 
