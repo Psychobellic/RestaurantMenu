@@ -21,7 +21,7 @@ export default function Suggestion() {
 				onSubmit={(e) => {
 					handleSubmit(e);
 				}}>
-				<ul className={styles.suggestionForm}>
+				<ul className={styles.suggestionsForm}>
 					<li className={styles.formSuggestion}>
 						<label htmlFor="suggestion" />
 						<input

@@ -75,3 +75,19 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 530px){
+
+  html, body{
+  main{
+    .arrow-down{
+      transform: translateY(150%);
+      text-align: right;
+    }
+    .arrow-forward{
+      transform: rotate(-90deg) translateX(-100%);
+      text-align: right;
+    }
+  }
+}
+}

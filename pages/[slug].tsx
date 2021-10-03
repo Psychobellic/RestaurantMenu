@@ -24,7 +24,8 @@ export const Slug = () => {
 						<strong>Sobremesa:</strong>arroz doce
 						<br />
 						<br />
-						Para <strong>acompanhamento</strong> selecione <strong>uma</strong>
+						Para <strong>acompanhamento</strong> selecione
+						<strong>uma</strong>
 						das opções abaixo:
 					</span>
 					<div className={styles.cardContainer}>

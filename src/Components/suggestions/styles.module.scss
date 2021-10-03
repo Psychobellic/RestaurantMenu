@@ -2,9 +2,9 @@
   color: var(--greenLight);
   font-family: var(--font1);
   font-size: 2rem;
+  transform: translateX(7.5%);
 }
-.suggestionForm{
-  
+.suggestionsForm{
     list-style-type: none;
   .formSuggestion{
     justify-content: center;
@@ -42,5 +42,17 @@
         padding-right: 1rem;
       }
     } 
+  }
+}
+@media screen and (max-width: 530px){
+  .title{
+
+  }
+  .suggestionsForm{
+    .formSuggestion{
+      .inputField{
+        width: 60vw;
+      }
+    }
   }
 }
