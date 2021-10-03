@@ -30,7 +30,7 @@ export default function Layout({ children }) {
 						<Calendar />
 						<h1>CARDÁPIO DA SEMANA</h1>
 					</div>
-					<div>
+					<div className={styles.weekdayBtn}>
 						<ul>
 							<Button />
 						</ul>
