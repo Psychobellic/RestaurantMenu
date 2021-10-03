@@ -75,13 +75,63 @@
   
 }
 @media screen and (min-width: 530px) and (max-width: 680px){
-
+  .day{
+    width: 75vw;
+    font-family: var(--font1);
+    font-weight: normal;
+    padding-top: 1rem;
+    margin-left: 5vw;
+    .dayTitle{
+      h1{
+        font-size: 1.4rem;
+      }
+    }
+    span{
+      font-size: 1.2rem;
+      strong{
+        font-size: 1.25rem;
+        padding-right: 0.25rem;
+      }
+    }
+    .cardContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70vw;
+    }
+   
+  }
 
 }
 
 @media screen and (min-width: 680px) and (max-width: 960px){
 
-
+  .day{
+    width: 75vw;
+    font-family: var(--font1);
+    font-weight: normal;
+    padding-top: 1rem;
+    margin-left: 5vw;
+    .dayTitle{
+      h1{
+        font-size: 1.4rem;
+      }
+    }
+    span{
+      font-size: 1.2rem;
+      strong{
+        font-size: 1.25rem;
+        padding-right: 0.25rem;
+      }
+    }
+    .cardContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70vw;
+    }
+   
+  }
 }
 
 @media screen and (min-width: 960px) and (max-width: 1440px){
