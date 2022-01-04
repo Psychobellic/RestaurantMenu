@@ -1,6 +1,6 @@
 import React from "react";
-import RestaurantMenu from "../src/Components/Menu";
+import Menu from "../src/Components/Menu";
 
 export default function App() {
-	return <RestaurantMenu />;
+	return <Menu />;
 }

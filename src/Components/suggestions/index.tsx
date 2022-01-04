@@ -8,7 +8,6 @@ export default function Suggestion() {
 	const [openModal, setOpenModal] = useState(false);
 
 	const handleSubmit = (e: React.FormEvent) => {
-		e.preventDefault();
 		console.log("sending");
 	};
 
@@ -19,6 +18,7 @@ export default function Suggestion() {
 				method="POST"
 				autoComplete="off"
 				onSubmit={(e) => {
+					e.preventDefault(e);
 					handleSubmit(e);
 				}}>
 				<ul className={styles.suggestionsForm}>
@@ -37,7 +37,7 @@ export default function Suggestion() {
 							<label htmlFor="submit" />
 							<a
 								className={styles.submit}
-								onClick={() => {
+								onClick={(e) => {
 									setOpenModal(true);
 								}}>
 								<h3>Finalizar cardápio da semana</h3>

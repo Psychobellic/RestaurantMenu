@@ -1,21 +1,11 @@
 .day{
-  display: flex;
-  flex-direction: column;
-  color: var(--greenLight);
-  background: var(--white);
-  z-index: 3;
-  justify-content: space-between;
-  text-align: justify;
-  width: 27.5vw;
-  font-family: var(--font1);
-  font-weight: normal;
-  padding-top: 1rem;
-  margin-left: -45vw;
-  font-size: 1rem;
-  :hover{
-    cursor: pointer;
+    width: 25vw;
+    align-self: flex-start;
+    font-family: var(--font1);
+    font-weight: normal;
+    padding-top: 1rem;
+    margin-left: 17.5vw;
 
-  }
   .dayTitle{
     display: flex;
     flex-direction: row;

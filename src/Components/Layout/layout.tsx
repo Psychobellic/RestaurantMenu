@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../../styles/layout.module.scss";
 
 import Logo from "../logo";
-import { Button } from "../button/index";
+import { Button } from "../Button/index";
 import Calendar from "../../svg/calendar";
 import Suggestion from "../suggestions";
 

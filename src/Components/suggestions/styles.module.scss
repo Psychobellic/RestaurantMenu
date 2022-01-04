@@ -2,6 +2,7 @@
   color: var(--greenLight);
   font-family: var(--font1);
   font-size: 2rem;
+  margin-top: 7rem;
   transform: translateX(7.5%);
 }
 .suggestionsForm{
@@ -57,9 +58,6 @@
   }
 }
 @media screen and (min-width: 680px) and (max-width: 960px){
-  .title{
-
-  }
   .suggestionsForm{
     .formSuggestion{
       .inputField{
@@ -67,5 +65,4 @@
       }
     }
   }
-
 }

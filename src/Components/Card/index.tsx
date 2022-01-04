@@ -1,14 +1,11 @@
-import styles from "./styles.module.scss";
+import { useState, useEffect } from 'react';
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { useRouter } from "next/router";
+import styles from './styles.module.scss';
+
+import Image from 'next/image';
 
 export default function Card({ option, content }) {
 	const [isActive, setActive] = useState(false);
-
-	const router = useRouter();
-	const text = router.asPath;
 
 	useEffect(() => {
 		isActive ? setActive(false) : null;
