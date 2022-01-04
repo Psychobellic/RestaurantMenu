@@ -2,6 +2,7 @@ import styles from "../src/styles/slug.module.scss";
 
 import Link from "../src/Components/Link";
 import { useRouter } from "next/router";
+import RestaurantMenu from '../src/Components/Menu';
 
 import Card from "../src/Components/Card";
 import { ArrowForward, ArrowDown } from "../src/svg/arrow";
